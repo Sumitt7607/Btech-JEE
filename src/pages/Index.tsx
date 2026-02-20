@@ -5,6 +5,7 @@ import CollegeComparison from "@/components/CollegeComparison";
 import CounsellingSection from "@/components/CounsellingSection";
 import AdmissionProcess from "@/components/AdmissionProcess";
 import DocumentationSection from "@/components/DocumentationSection";
+import PlacementWebinarSection from "@/components/PlacementWebinarSection";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
       <AdmissionProcess/>
       {/* <FooterSection /> */}
       <DocumentationSection/>
+      <PlacementWebinarSection/>
     </div>
   );
 };

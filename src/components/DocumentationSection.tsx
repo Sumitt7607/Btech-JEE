@@ -164,7 +164,7 @@ export default function DocumentationSection() {
             }}
           >
             <Download className="w-5 h-5" />
-            Download Complete Checklist
+            {/* Download Complete Checklist */}
             {/* Shimmer overlay */}
             <span
               className="absolute inset-0 opacity-25 pointer-events-none"

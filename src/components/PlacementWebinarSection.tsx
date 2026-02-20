@@ -27,26 +27,26 @@ interface Recording {
 
 /* ─── Data ─── */
 const upcomingWebinars: Webinar[] = [
-  {
-    id: "w1",
-    type: "campus",
-    title: "Crack Campus Placements: Strategy & Resume Tips",
-    speaker: "Dr. Anjali Mehra",
-    role: "Placement Director, IIT Alumni",
-    date: "March 15, 2025",
-    time: "11:00 AM IST",
-    liveSoon: true,
-  },
-  {
-    id: "w2",
-    type: "offcampus",
-    title: "Off-Campus Hiring: LinkedIn, Job Boards & Cold Outreach",
-    speaker: "Rahul Verma",
-    role: "Senior HR, TCS & Ex-Infosys",
-    date: "March 22, 2025",
-    time: "3:00 PM IST",
-    liveSoon: false,
-  },
+  // {
+  //   id: "w1",
+  //   type: "campus",
+  //   title: "Crack Campus Placements: Strategy & Resume Tips",
+  //   speaker: "Dr. Anjali Mehra",
+  //   role: "Placement Director, IIT Alumni",
+  //   date: "March 15, 2025",
+  //   time: "11:00 AM IST",
+  //   liveSoon: true,
+  // },
+  // {
+  //   id: "w2",
+  //   type: "offcampus",
+  //   title: "Off-Campus Hiring: LinkedIn, Job Boards & Cold Outreach",
+  //   speaker: "Rahul Verma",
+  //   role: "Senior HR, TCS & Ex-Infosys",
+  //   date: "March 22, 2025",
+  //   time: "3:00 PM IST",
+  //   liveSoon: false,
+  // },
 ];
 
 const pastRecordings: Recording[] = [
@@ -303,10 +303,7 @@ export default function PlacementWebinarSection() {
 
         {/* Upcoming Webinar Cards */}
         <div className="mb-16">
-          <h3 className="text-xl font-bold text-gray-800 mb-6 flex items-center gap-2">
-            <span className="w-1 h-6 rounded-full bg-saffron inline-block" />
-            🔴 Upcoming Webinars
-          </h3>
+   
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {upcomingWebinars.map((w, i) => (
               <WebinarCard key={w.id} webinar={w} index={i} />
@@ -384,7 +381,7 @@ export default function PlacementWebinarSection() {
         </div>
 
         {/* Past Recordings */}
-        <div>
+        {/* <div>
           <h3 className="text-xl font-bold text-gray-800 mb-6 flex items-center gap-2">
             <span className="w-1 h-6 rounded-full bg-saffron inline-block" />
             🎬 Past Webinar Recordings
@@ -394,7 +391,7 @@ export default function PlacementWebinarSection() {
               <RecordingCard key={rec.id} rec={rec} index={i} />
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
