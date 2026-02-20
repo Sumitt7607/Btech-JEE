@@ -4,6 +4,8 @@ import MistakesSection from "@/components/MistakesSection";
 import CollegeComparison from "@/components/CollegeComparison";
 import CounsellingSection from "@/components/CounsellingSection";
 import AdmissionProcess from "@/components/AdmissionProcess";
+import DocumentationSection from "@/components/DocumentationSection";
+
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
@@ -13,6 +15,7 @@ const Index = () => {
       <CounsellingSection/>
       <AdmissionProcess/>
       {/* <FooterSection /> */}
+      <DocumentationSection/>
     </div>
   );
 };
